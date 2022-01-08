@@ -1,0 +1,32 @@
+.footer {
+  &-top {
+    align-items: center;
+    background: url('../images/img/footer.jpg') center no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding: 2rem;
+  }
+
+  &__logo {
+    width: 7.5rem;
+  }
+
+  &__link,
+  .social-link {
+    color: $p-color;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__bottom {
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+.fab {
+  color: $p-color;
+}

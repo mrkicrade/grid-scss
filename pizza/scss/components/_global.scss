@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; // 62.5% of 16px = 10px;
+}
+
+body {
+  color: $p-color;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem; // 14 / 10 = 1.4
+  line-height: 2.4rem;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+p {
+  color: $par-color;
+}
+
+ul {
+  list-style: none;
+}

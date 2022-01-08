@@ -1,0 +1,49 @@
+#delivery {
+  display: grid;
+  grid-template-areas: 'title'
+  '.'
+  '.';
+  grid-template-rows: 20rem 1fr 10rem;
+}
+
+.section-heading {
+  grid-area: title;
+}
+
+.image-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 5vw);
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.img1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.img2 {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.img3 {
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.img4 {
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.img7,
+.img8 {
+  grid-column: span 2;
+  grid-row: span 2;
+}

@@ -1,0 +1,71 @@
+#banner {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+}
+
+.banner  {
+  &__bg-container {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    overflow-y: hidden;
+  }
+
+  &__bg-image {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    justify-self: center;
+    text-align: center;
+
+    &--h1 {
+      color: $heading-color;
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-style: italic;
+    }
+
+    &--h2 {
+      color: $heading-color;
+      font-size: 10rem;
+      font-weight: 600;
+      line-height: 10.8rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.btn {
+  background: linear-gradient(to bottom right, $nav-bg-color, $btn-bg-color);
+  border: 0;
+  color: $heading-color;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 1.5rem 3rem;
+  padding: 1rem 4.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    background: linear-gradient(to bottom right, $btn-hover1, $btn-hover2);
+    box-shadow: 0 12px 24px $btn-box-shadow;
+  }
+
+  &:focus {
+    background: $btn-focus;
+    box-shadow: 0 6px 12px $btn-box-shadow;
+  }
+
+  &:active {
+    background: $nav-bg-color;
+  }
+
+  &-lg {
+    font-size: 2.6rem;
+  }
+}

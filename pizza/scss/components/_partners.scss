@@ -1,0 +1,17 @@
+.subsection-delivery {
+  background: url('../images/img/subsection-2.jpg') center no-repeat;
+  background-size: cover;
+
+  h2 {
+    font-size: 2.6rem;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+}
+
+.delivery-partners {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 5rem) 10rem 15rem;
+  margin-top: 2rem;
+}

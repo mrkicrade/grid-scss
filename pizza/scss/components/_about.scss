@@ -1,0 +1,74 @@
+#about {
+  background: url('../images/img/subsection-2.jpg') bottom no-repeat;
+  background-color: $about-bgc;
+  background-size: cover;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas: '. title title .'
+  '. content-left content-right .'
+  'figures figures figures figures';
+  grid-template-columns: 25rem repeat(2, minmax(0, 1fr)) 25rem;
+  grid-template-rows: 20rem 1fr 20rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.section-heading {
+  align-self: center;
+  color: $p-color;
+  font-size: 6rem;
+  font-weight: 300;
+  grid-area: title;
+  justify-self: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  &__back,
+  &__front {
+    display: block;
+  }
+
+  &__back {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    line-height: 4rem;
+    opacity: .2;
+    text-transform: capitalize;
+  }
+}
+
+.about {
+  &__content-left {
+    font-size: 2.6rem;
+    grid-area: content-left;
+    line-height: 3.9rem;
+
+    p {
+      color: $p-color;
+    }
+  }
+
+  &__content-right {
+    grid-area: content-right;
+  }
+
+  &__figures {
+    display: grid;
+    grid-area: figures;
+    grid-template-columns: repeat(3, 20rem);
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  &__figure-number {
+    font-size: 7rem;
+    font-weight: 300;
+    line-height: 5.6rem;
+  }
+
+  &__figure-text {
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+  }
+}
