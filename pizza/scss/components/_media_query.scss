@@ -102,13 +102,6 @@
 }
 
 @media (max-width: 380px) {
-  .banner__bg-container {
-    img {
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
   .banner__content {
     &--h1 {
       font-size: 3rem;
