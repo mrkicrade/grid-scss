@@ -119,10 +119,9 @@ ul {
   grid-column: 1 / 4;
   grid-row: 1 / 4;
   overflow-y: hidden; }
-
-.banner__bg-image {
-  height: 100%;
-  object-fit: cover; }
+  .banner__bg-container img {
+    height: 100%;
+    object-fit: cover; }
 
 .banner__content {
   grid-column: 1 / 4;
@@ -505,9 +504,6 @@ label {
     grid-template-columns: repeat(2, 3rem) 5rem 7rem; } }
 
 @media (max-width: 380px) {
-  .banner__bg-container img {
-    height: 100%;
-    object-fit: cover; }
   .banner__content--h1 {
     font-size: 3rem; }
   .banner__content--h2 {
